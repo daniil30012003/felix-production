@@ -1,11 +1,11 @@
 module.exports = {
-    admins: ["YOUR_ID", "SOMEONE_TRUSTABLE", "A_SECOND_TRUSTABLE_PERSON_IF_YOU_KNOW_ANY_IDK"],
-    prefix: "felix",
-    codename: 'Felix',
+    admins: ["224298948897144835", "398539220290895874"],
+    prefix: "d>",
+    codename: 'Daniil',
     //User Settings > Appearance > Enable Developer Mode > Right click on your username and the click "Copy ID". There, you got your Discord ID
-    ownerID: "YOUR_ID",
+    ownerID: "224298948897144835",
     //Token is needed
-    token: "baguette",
+    token: process.env.BOT_TOKEN,
     database: {
         //Unless the database is on another server, the host should stay like this
         host: "127.0.0.1",
@@ -16,7 +16,7 @@ module.exports = {
         //The username to connect as
         user: "admin",
         //If a password is set, the password to connect with (in case the server has a public address and the RethinkDB instance is set to not only be available locally)
-        password: ""
+        password: "daniil30012003"
     },
     redis: {
         //Whether Redis should be used, unless ioredis and redis are installed and redis is running, this should stay false
@@ -30,7 +30,7 @@ module.exports = {
         //The database to use
         db: 0,
         //The password if one is set in the redis server config
-        password: ''
+        password: 'daniil30012003'
     },
     requestHandler: {
         host: 'localhost',
@@ -124,9 +124,9 @@ module.exports = {
                 WSPort: 80,
                 host: 'localhost',
                 //Region: us/eu...
-                region: 'us',
+                region: 'eu',
                 //More detailed location for info purposes
-                location: 'Baguette'
+                location: 'no'
             }]
         }
     },
