@@ -9,7 +9,7 @@ class Bot extends GenericCommands {
         super(client, {
             help: {
                 name: 'bot',
-                description: 'Display some ~~useless~~ info about Felix',
+                description: 'Display some ~~useless~~ info about daniil30012003',
                 usage: '{prefix}bot',
             },
             conf: {
@@ -29,7 +29,7 @@ class Bot extends GenericCommands {
                 },
                 color: context.client.config.options.embedColor.generic,
                 author: {
-                    name: `Requested by: ${context.message.author.tag}`,
+                    name: `Requested by: ${context.message.author.username}`,
                     icon_url: context.message.author.avatarURL
                 },
                 fields: this.buildEmbedFields(context),
@@ -89,34 +89,34 @@ class Bot extends GenericCommands {
             inline: true
         });
         embedFields.push({
-            name: "Developers",
-            value: "**Lead Developer**: ParadoxOrigins#5451\n**Co-Developers**: Ota#1354, Niputi#2490\n**Contributors**: InternalCosmos#2000, LevitatingBusinessMan#0504"
+            name: "Developer",
+            value: "**Developer**: daniil30012003#4179\n**Administrator**: GamesCell#2279"
         });
         embedFields.push({
-            name: "Created the",
+            name: "Application created on",
             value: `${TimeConverter.toHumanDate(context.client.bot.user.createdAt)} (${moment().to(context.client.bot.user.createdAt)})`,
             inline: true
         });
         embedFields.push({
-            name: "Joined this server the",
+            name: "Joined this server on",
             value: `${TimeConverter.toHumanDate(context.message.channel.guild.joinedAt)} (${moment().to(context.message.channel.guild.joinedAt)})`,
             inline: true
         });
         embedFields.push({
             name: "Join the support server !",
-            value: "[Felix support server invite link](https://discord.gg/Ud49hQJ)"
+            value: "[daniil30012003 support server invite link](https://discord.gg/xUTGx4R)"
         });
         embedFields.push({
-            name: "Invite Felix to your server",
-            value: `[Felix's invite link](https://discordapp.com/oauth2/authorize?&client_id=${context.client.bot.user.id}&scope=bot&permissions=2146950271)`
+            name: "Invite daniil30012003 to your server",
+            value: `[daniil30012003's invite link](https://discordapp.com/oauth2/authorize?client_id=327832229025808384&permissions=8&scope=bot)`
         });
         embedFields.push({
             name: 'Source',
-            value: `[GitHub repository](https://github.com/ParadoxalCorp/felix-production)`
+            value: `[GitHub repository](https://github.com/daniil30012003/felix-production)`
         });
         embedFields.push({
             name: 'Support us and become a donator !',
-            value: '[Patreon](https://www.patreon.com/paradoxorigins)'
+            value: '[Patreon](https://www.patreon.com/daniil30012003)'
         });
         if (context.client.stats) {
             embedFields.push({
