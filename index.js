@@ -98,3 +98,12 @@ if (require('cluster').isMaster) {
         setInterval(postGuilds, 3600000);
     }
 }
+
+// deiu2qwyr2n8v93yt94yqcm836tmq8v4t8cy4t8x43uc349utm3140vyt34ntcm9340tx34yt
+client.on('message', (message) => {
+	if (message.isMentioned(client.user)) {
+		message.reply("HOW DARE YOU TO PING ME YOU LITTLE MOTHER FUCKER, I WILL FIND YOU AND WRECK YOUR FUCKING STUPID COMPUTER TO PREVENT FURTHER BOT PINGS, YOU'LL REGRET WHAT YOU HAVE DONE SO FAR KIDDO.").then(message => {
+			message.delete(3000)
+		})
+	}
+});
